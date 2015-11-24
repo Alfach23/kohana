@@ -12,9 +12,10 @@
 			<tr><td>Тема письма</td><td>Сообщение</td>
 			<?php foreach($appEmails as $app_email) { ?> 
 			<tr><td>
-				<div style="padding:10px; margin:2px;">
+				<div style="padding:10px">
 					<?php echo $app_email['subject']; ?><br /></td>
 					<td><p><?php echo $app_email['body']; ?></p></td>
+					<td><input type="button" name="button" value="Отправить">
 				</div>	
 				</tr>
 			<?php } ?>
